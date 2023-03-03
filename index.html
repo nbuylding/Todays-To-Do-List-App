@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="logo big.png" />
+
+		<link rel="stylesheet" href="style.css" />
+		<title>Today's To-Do's!</title>
+	</head>
+
+	<body>
+		<main class="container">
+			<h1>Today's To-Do List</h1>
+
+			<div class="display-list"></div>
+
+			<div class="task-buttons">
+				<button class="open-new-task">+</button>
+				<button class="btn-clear">Clear</button>
+			</div>
+
+			<div class="new-task hidden">
+				<textarea
+					name="text"
+					id="text-field"
+					cols="20"
+					rows="5"
+					placeholder="enter new task..."
+				></textarea>
+				<button id="submit">Done</button>
+			</div>
+		</main>
+
+		<script src="app.js"></script>
+	</body>
+</html>

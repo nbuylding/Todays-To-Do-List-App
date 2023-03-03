@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Golos Text', sans-serif;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1011%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c44 C 72%2c66 216%2c145.8 360%2c154 C 504%2c162.2 576%2c81 720%2c85 C 864%2c89 936%2c177.8 1080%2c174 C 1224%2c170.2 1368%2c87.6 1440%2c66L1440 560L0 560z' fill='rgba(157%2c 203%2c 119%2c 0.36)'%3e%3c/path%3e%3cpath d='M 0%2c556 C 96%2c503.8 288%2c302.4 480%2c295 C 672%2c287.6 768%2c495.8 960%2c519 C 1152%2c542.2 1344%2c432.6 1440%2c411L1440 560L0 560z' fill='rgba(74%2c 157%2c 5%2c 0.38)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1011'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	padding-top: 5rem;
+}
+
+.container h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+.container p {
+	font-size: 1rem;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1rem 0;
+}
+
+/* list items */
+.display-list {
+	list-style: none;
+}
+
+.display-list li {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: lowercase;
+	border: 1px solid #9c9c9ca2;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+/* list buttons */
+.task-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.task-buttons button {
+	padding: 0.5rem 1rem;
+	margin: 1rem;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.btn-clear:hover {
+	background-color: #000000;
+	color: #ffffff;
+	border: 1px solid #000000;
+}
+
+.open-new-task:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+/* adding new tasks */
+.new-task {
+	display: flex;
+	flex-direction: column;
+}
+
+.new-task textarea::placeholder {
+	color: #000000a4;
+	text-transform: lowercase;
+}
+
+.new-task textarea {
+	padding: 1rem;
+}
+
+.new-task button {
+	padding: 0.5rem 1rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.new-task button:hover {
+	background-color: #4a9d05;
+	color: #ffffff;
+	border: 1px solid #4a9d05;
+}
+
+.hidden {
+	display: none;
+}
